@@ -1,0 +1,498 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/AislingFreeDemo.otf), format('otf');
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../fonts/proxima-nova-extrabold.ttf), format('woff');
+}
+
+*{
+    margin: 0;
+}
+.nav_menu a{
+    font-size: 6rem;
+    line-height: 1;
+    transition: .5s;
+}
+.nav_menu h1{
+    font-family:"Proxima Nova";
+    font-size: 6.6rem;
+}
+.nav_menu a:hover{
+    color:#007994;
+}
+.nav_menu{
+    gap: 150px;
+    text-align: end;
+    padding-top: 40px;
+    padding-right: 90px;
+    font-family: "Proxima Nova";
+    height: 100vh;
+    background-color: #00313C;
+    background-image: url(../img/menu_background.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    flex-direction: column; 
+    position: fixed;
+    top: 0;
+    /* right: 90%;    */
+    width: 50%;
+    height: 100vh;
+    transition: right 0.5s ease;
+    z-index: 1000; 
+    animation: menu 2s forwards ease-in-out;
+}
+
+@keyframes menu{
+    from{
+        transform: translateX(-100%);
+    }to{
+        transform: translateX(0);
+    }
+}
+
+
+
+li{
+    list-style: none;
+    line-height: .6;
+}
+
+a, h1{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 8px;
+}
+h2{
+    font-family: "Proxima Nova";
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+}
+
+/* MENÚ HAMBURGUESA */
+.hamburger {
+    z-index: 1000; 
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    background-color: rgba(255, 255, 255, 0.568);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.hamburger span {
+  height: 5px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+
+
+
+
+.section_1{
+    
+    background-image: url(../img/home_background.png);
+    background-color: #00313C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.section_1 h1{
+    
+    font-size: 16vw;
+    font-family: "Proxima Nova"
+}
+
+.section_1 h2{
+    margin: 40px;
+    line-height: .8;
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* Centra horizontalmente */
+    text-align: center;
+    margin: 0 auto;  /* Centrado horizontal en el contenedor */
+    padding: 20px;    /* Espaciado interior */
+    gap: 30px;        /* Espacio entre los elementos hijos */
+    width: 100%;        /* Ancho relativo al contenedor padre */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+
+.entry button {
+    height: 100px;           
+    padding: 5vw 10vw;      
+    font-size: 24px;         
+    font-family: "Proxima Nova";
+    color: white;
+    background-color: #00313C;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: auto;             
+    min-width: 150px;        
+    max-width: 300px;        
+
+}
+.entry button:hover {
+    background-color: #005f73;
+}
+
+.section_2{
+    
+    background-image: url(../img/section_visit_background.png);
+    background-color: #00313C;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.section_2 h1{
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 6vw;
+    font-family: "Proxima Nova"
+}
+
+.section_2 p{
+    width: 100%;
+    line-height: .8;
+    color: white;
+    font-size: 3vw;
+    font-family: "Proxima Nova"
+}
+
+
+
+
+
+.section_3 {
+    background-image: url(../img/menu_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    height: 130vh;
+}
+
+.section_3 h1 {
+    font-size: 5vw;
+    font-family: "Proxima Nova";
+    margin-bottom: 40px; 
+}
+
+
+.cards {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;
+    width: 60vh;
+    max-width: 100%;
+    height: 70vh;
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 20px 0; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+    max-width: 100%;
+    max-height: 50%;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+}
+
+
+.card-text {
+    letter-spacing: 0;
+    text-align: center; 
+    color: #fff;
+    padding: 0 15px;
+}
+
+.card-text h1 {
+    font-family: 'Proxima Nova';
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.card-text p {
+    font-family: 'Proxima Nova';
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 20px; 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.card button, .entry button{
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    background-color: #00313C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #005f73;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 0.2;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0);
+    }
+}
+
+/* GALLERY */
+.galeria {
+    height: 250vh;
+    background-color: #00313C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+
+.galeria h1 {
+    padding: 100px 0px;
+    font-family: "Proxima Nova";
+    font-size: 5rem; 
+    color: white; 
+    margin: 0; 
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; 
+}
+
+.gallery_image {
+    max-width: 32%;
+    min-width: 24%;
+    max-height: 300px;
+    min-height: 100px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.gallery_image img {
+    width: 100%; 
+    object-fit: cover; 
+}
+
+
+/* CHARTJS */
+
+.chart-container {
+    width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* MODAL */
+
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #00313C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #005f73;
+} 
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  justify-content: center;
+  align-items: center;
+}
+.modal h2{
+    margin-bottom: 20px;
+
+    color: #00313C;
+
+}
+.modal-content {
+  color: #00313C;
+  background-color: #ffffffc2;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form-group {
+  margin: 15px 20px;
+  text-align: center;
+}
+
+label {
+  font-family: "Poxima Nova";
+  font-size: 2rem;
+  color: #00313C;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+button.btn-submit {
+  padding: 10px 20px;
+  background-color: #00313C;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-submit:hover {
+  background-color: #005f73;
+}
+
+.form-group a {
+  color: #00313C;
+  letter-spacing: 0;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.form-group a:hover {
+  text-decoration: underline;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+
+
+ .chart-container {
+        width: 80%;  
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    canvas {
+        max-width: 100%;  
+        height: auto;     
+    }
