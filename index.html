@@ -1,129 +1,255 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>VISIT REIKIAVIK</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reikiavik — Capital del Norte</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+</head>
+<body>
 
-        <link rel="stylesheet" href="css/style.css">
-        <script rel="stylesheet" src="js/script.js"></script>
-        <script src="js/jquery-3.7.1.min.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
-        <!-- Chart.js CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </head>
+<!-- NAVBAR -->
+<nav>
+  <div class="logo"><span>VISIT</span> REIKIAVIK</div>
+  <button class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-menu">
+    <li><a href="#planes">Planes</a></li>
+    <li><a href="#visitas">Visitas</a></li>
+    <li><a href="#ubicaciones">Mapa</a></li>
+    <li><a href="gallery.html">Galería</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
 
-    <body>
-        
-        <header class="header">
-            
-           <nav class="nav_menu" id="nav_menu">
-                <h1>MENU</h1>
-                <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#visit_us.html">VISIT REIKIAVIK</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contact.html">CONTACT US</a></li>
-                </ul>
-           </nav>
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-                
-            </div>
+<section class="hero">
+  <div class="hero-badge">64°08′ N — Capital de Islandia</div>
+  <h1>REIKIAVIK</h1>
+  <p>La ciudad del fuego y el hielo</p>
+  <div class="hero-cta">
+    <a href="#planes" class="btn-primary">Explorar planes</a>
+    <a href="#contacto" class="btn-secondary">Reservar visita</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">380K</div><div class="stat-label">Habitantes</div></div>
+    <div class="stat"><div class="stat-num">0°C</div><div class="stat-label">Temp. media</div></div>
+    <div class="stat"><div class="stat-num">24h</div><div class="stat-label">Luz en verano</div></div>
+  </div>
+</section>
 
-        </header> 
-        <section class="section_1">
-            <div class="entry">
-                <h1>REIKIAVIK</h1>
-                <h2>Un destino pequeño con experiencias gigantes.</h2>
-                <button class="leer_más">LEER MÁS</button>
-            </div>
-
-        </section>
-        <section class="section_2" id="visit_us">
-            <div class="entry">
-               <h1>VISITA REIKIAVIK</h1>
-                <p>Descubre la vibrante capital de Islandia, donde la naturaleza salvaje se encuentra con una cultura moderna y acogedora. Recorre sus coloridas calles, disfruta de sus cafés y museos, y explora paisajes únicos a pocos minutos del centro. Reikiavik es el punto de partida perfecto para vivir la magia del país del fuego y el hielo.</p>
-            </div>
-        </section>
-
-        <section class="section_3">
-            <h1>QUE PUEDES HACER EN REIKIAVIK</h1>
-
-            <div class="cards">
-                <a href="#">
-                    
-
-                    <div class="card">
-                        <img src="img/auroras_boreales.jfif">
-                        <div class="card-text">
-                            <h1>AURORAS BOREALES</h1>
-                            <p>Disfruta de las maravillosas vistas nocturnas que te ofrece la cuidad. En los meses de invierno, el cielo islandés se transforma en un espectáculo de luces danzantes. Puedes verlas por tu cuenta o con tours especializados. </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-
-                    <div class="card">
-                        <img src="img/baños_termales.jpg">
-                        <div class="card-text">
-                            <h1>PISCINAS TERMALES</h1>
-                            <p>Relájate dándote un baño termal junto al mar. Una opción más auténtica y económica para convivir con la vida diaria de los islandeses y disfrutar de baños calientes al aire libre.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-
-                    <div class="card">
-                        <img src="img/isla_videy.jpg">
-                        <div class="card-text">
-                            <h1>ISLA VIDEY</h1>
-                            <p>No te quedes siempre en el mismo sitio! Visita otras islas cercanas. La isla Videy es una gran opción. Un remanso de tranquilidad a pocos minutos en barco, ideal para caminar entre naturaleza, arte al aire libre y miradores increíbles.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-
-                    <div class="card">
-                        <img src="img/volcan.jpg">
-                        <div class="card-text">
-                            <h1>VOLCÁN FAGRADASFJALL </h1>
-                            <p>Adéntrate en uno de los paisajes más impactantes de Islandia recorriendo los senderos que rodean el volcán Fagradalsfjall. Aunque su actividad varía con el tiempo, la zona volcánica ofrece un escenario único de cráteres recientes y vistas naturales islandesas.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-
-                    <div class="card">
-                        <img src="img/ver_ballenas.jpg">
-                        <div class="card-text">
-                            <h1>AVISTAMIENTO DE BALLENAS</h1>
-                            <p>Embárcate desde el puerto viejo para observar de cerca algunas de las especies marinas más impresionantes del Atlántico Norte en su hábitat natural. Una experiencia como pocas</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#">
-
-                    <div class="card">
-                        <img src="img/isla_videy.jpg">
-                        <div class="card-text">
-                            <h1>ISLA VIDEY</h1>
-                            <p>No te quedes siempre en el mismo lugar! Visita otras islas cercanas. La isla Videy es una gran opción. Un remanso de tranquilidad a pocos minutos en barco, ideal para caminar entre naturaleza, arte al aire libre y miradores increíbles. </p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-        </section>
-
-               
-        
-        
+<!-- PLANES -->
+<section id="planes">
+  <div class="section-header">
+    <p class="opener">Experiencias únicas</p>
+    <h2>Planes para cada viajero</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="plans-grid">
+    <!-- <div class="plan-card">
+      <div class="plan-img"><img src="img/" alt="Auroras boreales"></div>
+      <div class="plan-body">
+        <p class="plan-tag">Experiencia nocturna</p>
+        <h3>Caza de Auroras Boreales</h3>
+        <p>Sal de la ciudad hacia lugares de oscuridad total y contempla el espectáculo más asombroso de la naturaleza ártica.</p>
+        <div class="plan-meta"><span>⏱ 4–6 horas</span><span>⭐ 4.9/5</span></div>
+      </div>
+    </div> -->
+    <div class="plan-card">
+      <div class="plan-img"><img src="img/aurora2.webp" alt="Auroras boreales"></div>
+      <div class="plan-body">
+        <p class="plan-tag">Experiencia nocturna</p>
+        <h3>Caza de Auroras Boreales</h3>
+        <p>Sal de la ciudad hacia lugares de oscuridad total y contempla el espectáculo más asombroso de la naturaleza ártica.</p>
+        <div class="plan-meta"><span>⏱ 4–6 horas</span><span>⭐ 4.9/5</span></div>
+      </div>
+    </div>
     
-    
-    </body>
+    <div class="plan-card">
+      <div class="plan-img"><img src="img/plan1.jpg" alt="Glaciar Vatnajökull"></div>
+      <div class="plan-body">
+        <p class="plan-tag">Aventura glaciar</p>
+        <h3>Senderismo en Vatnajökull</h3>
+        <p>Explora el glaciar más grande de Europa. Cuevas de hielo azul, grietas profundas y paisajes de otro planeta.</p>
+        <div class="plan-meta"><span>⏱ Día completo</span><span>⭐ 4.8/5</span></div>
+      </div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-img"><img src="img/plan3.webp" alt="Tour cultural"></div>
+      <div class="plan-body">
+        <p class="plan-tag">Cultura & Arte</p>
+        <h3>Tour Cultural por la Ciudad</h3>
+        <p>Desde Hallgrímskirkja hasta el Harpa. Museos de sagas vikingas, street art y gastronomía nórdica de autor.</p>
+        <div class="plan-meta"><span>⏱ 3 horas</span><span>⭐ 4.7/5</span></div>
+      </div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-img"><img src="img/plan4.jpg" alt="Aguas geotermales"></div>
+      <div class="plan-body">
+        <p class="plan-tag">Relax & Bienestar</p>
+        <h3>Aguas Geotermales</h3>
+        <p>Sumérgete en las legendarias aguas termales. Blue Lagoon, Sky Lagoon y piscinas naturales locales para desconectar.</p>
+        <div class="plan-meta"><span>⏱ 2–4 horas</span><span>⭐ 4.9/5</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISITAS -->
+<section id="visitas">
+  <div class="section-header">
+    <p class="opener">Imprescindibles</p>
+    <h2>Qué ver en Reikiavik</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="visits-list">
+    <div class="visit-item">
+      <div class="visit-icon" id="iglesia"><img src="img/iglesia.webp" alt="Hallgrímskirkja"></div>
+      <div class="visit-info">
+        <h4>Hallgrímskirkja</h4>
+        <p>La iglesia más icónica de Islandia. Su arquitectura basáltica de 74 m domina el horizonte. Las vistas desde la torre son incomparables.</p>
+      </div>
+      <span class="visit-badge badge-must">Imprescindible</span>
+    </div>
+    <div class="visit-item">
+      <div class="visit-icon" id="lagoon"><img src="img/lagoon.jpg" alt="Blue Lagoon"></div>
+      <div class="visit-info">
+        <h4>Blue Lagoon</h4>
+        <p>Laguna geotérmica de aguas de color turquesa lechoso. Rica en sílice y algas, a solo 40 min del centro.</p>
+      </div>
+      <span class="visit-badge badge-nature">Naturaleza</span>
+    </div>
+    <div class="visit-item">
+      <div class="visit-icon" id="harpa"><img src="img/Harpa_concert_hall.avif" alt="Harpa"></div>
+      <div class="visit-info">
+        <h4>Harpa Concert Hall</h4>
+        <p>Joya arquitectónica de cristal y acero junto al puerto. Premio de Arquitectura Contemporánea de la UE. Sede de la Ópera nacional.</p>
+      </div>
+      <span class="visit-badge badge-culture">Cultura</span>
+    </div>
+    <div class="visit-item">
+      <div class="visit-icon" id="geyser"><img src="img/geyser.jpg" alt="Géiser"></div>
+      <div class="visit-info">
+        <h4>Géiser de Geysir</h4>
+        <p>El Strokkur erupciona cada 5-10 minutos lanzando agua a 30 m de altura. A 90 min de la capital en el Círculo Dorado.</p>
+      </div>
+      <span class="visit-badge badge-nature">Naturaleza</span>
+    </div>
+    <div class="visit-item">
+      <div class="visit-icon" id="museum"><img src="img/museum.jpg" alt="Museo Nacional"></div>
+      <div class="visit-info">
+        <h4>Museo Nacional de Islandia</h4>
+        <p>Recorre 1200 años de historia vikinga. Artefactos únicos, joyas medievales y la fascinante historia de los colonos nórdicos.</p>
+      </div>
+      <span class="visit-badge badge-culture">Cultura</span>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section id="ubicaciones">
+  <div class="section-header">
+    <p class="opener">Ubicaciones</p>
+    <h2>Descubre el mapa</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="map-container">
+    <iframe
+      class="map-frame"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-22.05,64.10,-21.75,64.17&layer=mapnik&marker=64.128288,-21.827774"
+      allowfullscreen
+      title="Mapa de Reikiavik"
+      loading="lazy">
+    </iframe>
+  </div>
+  <p class="map-link">
+    ↗ <a href="https://www.openstreetmap.org/?mlat=64.128&mlon=-21.827#map=13/64.128/-21.827" target="_blank" rel="noopener">Ver mapa completo en OpenStreetMap</a>
+  </p>
+</section>
+
+<!-- CHART.JS -->
+<section id="clima" class="clima">
+  <div class="section-header">
+    <p class="opener">Cuándo ir</p>
+    <h2>Clima a lo largo del año</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="chart-wrapper">
+    <p class="chart-title">Temperatura y horas de sol — Reikiavik</p>
+    <p class="chart-sub">Temperatura media mensual (°C) y horas de sol al día</p>
+    <canvas id="climaChart"></canvas>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="section-header">
+    <p class="opener">Planifica tu viaje</p>
+    <h2>Reserva tu experiencia</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Háblanos de tu viaje a Reikiavik</h3>
+      <p>Nuestro equipo local te ayuda a diseñar una experiencia personalizada. Conocemos cada rincón de Islandia.</p>
+      <div class="contact-detail">
+        <div class="cd-item"><span class="cd-dot"></span> Laugavegur 28, Reikiavik IS-101</div>
+        <div class="cd-item"><span class="cd-dot"></span> +999 999 9999</div>
+        <div class="cd-item"><span class="cd-dot"></span> visit@reikiavik.is</div>
+        <div class="cd-item"><span class="cd-dot"></span> Atención al cliente 24h, 9:00–20:00</div>
+      </div>
+    </div>
+    <div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre" required>
+          </div>
+          <div class="field">
+            <label>Apellidos</label>
+            <input type="text" placeholder="Apellidos">
+          </div>
+        </div>
+        <div class="field">
+          <label>Correo electrónico</label>
+          <input type="email" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>Interés</label>
+            <select>
+              <option value="">Seleccionar...</option>
+              <option>Auroras boreales</option>
+              <option>Senderismo glaciar</option>
+              <option>Tour cultural</option>
+              <option>Aguas termales</option>
+              <option>Ruta personalizada</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>Fecha aproximada</label>
+            <input type="month">
+          </div>
+        </div>
+        <button type="submit" class="form-submit">Enviar consulta →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Reikiavik — Capital del Norte</div>
+  <p>© 2026 Todos los derechos reservados</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
